@@ -1,0 +1,19 @@
+{
+  "name": "lecture-1",
+  "version": "1.0.0",
+  "description": "This is namaste react by Akshay saini",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "namaste",
+    "react",
+    "Avanish"
+  ],
+  "author": "Avanish",
+  "license": "ISC",
+  "dependencies": {
+    "parcel": "^2.10.3"
+  }
+}
