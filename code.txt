@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 1</title>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <script>
+        const heading=React.createElement("h1",{},"Hello world from react");
+
+        const root=ReactDOM.createRoot(document.getElementById("root"));
+        
+        root.render(heading);
+    </script>
+</body>
+</html>
+
+--------------------------------------------------------------------------------------
+Html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css" />
+    <title>Namaste</title>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <script src="./app.js"></script>
+</body>
+</html>
+
+react1
+
+
+const heading=React.createElement("h1",{id:"heading"},"Hello world from react");
+
+const root=ReactDOM.createRoot(document.getElementById("root"));
+
+root.render(heading);
+
+react 2
+
+{/*
+<div id="parent">
+    <div id="child">
+        <h1 id=child2>I am h1 tag</h1>
+        <h2 id=child3>I am h3 tag</h2>
+    </div>
+</div> */
+}
+
+const parent=React.createElement("div",
+{id:"parent",},
+React.createElement("div",{id:"child",},[
+    React.createElement("h1",{id:"child2"},"I am h1 tag"),
+    React.createElement("h2",{id:"child3"},"I am h2 tag")
+])
+);
+
+
+console.log(parent);
+const root=ReactDOM.createRoot(document.getElementById("root"));
+root.render(parent);
